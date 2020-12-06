@@ -1,12 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-keyboard_inputs[0] = keyboard_check(ord("D"));
-keyboard_inputs[1] = keyboard_check(ord("W"));
-keyboard_inputs[2] = keyboard_check(ord("A"));
-keyboard_inputs[3] = keyboard_check(ord("S"));
+event_inherited();
 
+sprite_index = spr_player;
 
-spd = 5*60;
-hspd = 0;
-vspd = 0;
+keyboard_inputs[0] = ord("D");
+keyboard_inputs[1] = ord("W");
+keyboard_inputs[2] = ord("A");
+keyboard_inputs[3] = ord("S");
+
+movespeed_base = 300;
+
+xscale = 1;
+yscale = 1;
