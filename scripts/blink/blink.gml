@@ -1,4 +1,4 @@
-function blink(blinking,blinking_cooldown) {
+function blink(blinking) {
 	if blinking <= 0
 	{
 		if random(1) <= 2*SLOMO_SECONDS
@@ -15,5 +15,5 @@ function blink(blinking,blinking_cooldown) {
 		}
 	}
 
-
+	return blinking > 0 and blinking < .15;
 }
